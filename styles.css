@@ -449,6 +449,84 @@ nav {
   margin-bottom: 0;
 }
 
+.foods {
+  background-color: #fefaf1;
+
+  height: 571px;
+  display: flex;
+  justify-content: center;
+}
+
+.food-wrapper {
+  max-width: 1295px;
+  width: 100%;
+  margin-top: 90px;
+}
+
+.titlebtn {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.foodseqcia {
+  display: flex;
+  margin-top: 118px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.foodseqcia img {
+  border-radius: 144px;
+  width: 194px;
+  height: 194px;
+}
+
+.foodseqcia p {
+  font-size: 22px;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.food-btn {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  gap: 30px;
+}
+
+@media only screen and (max-width: 1340px) {
+  .foodtitle {
+    margin-bottom: 50px;
+  }
+  .titlebtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .foods {
+    height: auto;
+    padding-bottom: 62px;
+  }
+  .foodseqcia {
+    display: flex;
+    justify-content: center;
+    width: 800px;
+    gap: 50px;
+    margin-top: 50px;
+  }
+
+  .foodseqcia p {
+    margin-top: 2px;
+  }
+  .foodseqcia-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 @media (max-width: 1024px) {
   .working {
     padding: 40px 20px;
