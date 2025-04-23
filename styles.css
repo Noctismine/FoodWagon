@@ -496,6 +496,234 @@ nav {
   gap: 30px;
 }
 
+.information {
+  height: auto;
+  background-color: #feefd0;
+  display: flex;
+  justify-content: center;
+}
+
+.information-container div {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 318px;
+  height: 136px;
+
+  color: #ffb800;
+}
+
+.information-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 130px;
+  max-width: 1350px;
+  width: 100%;
+  background-color: white;
+  border-radius: 46px;
+  padding: 55px;
+  height: 246px;
+  gap: 70px;
+  box-shadow: 0px 27px 52px 0px #ffae0047;
+}
+
+.information-wrapper {
+  max-width: 1180px;
+  width: 100%;
+}
+
+.information {
+  background-image: url("Background.png");
+}
+
+.information-container div h2 {
+  font-size: 35px;
+  margin-left: 25px;
+  border-right: 2px solid #cfcfcf;
+  padding-right: 45px;
+}
+
+.imenaipon {
+  margin-top: 160px;
+  height: 599px;
+}
+
+.ramehelper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.install {
+  width: 350px;
+  height: auto;
+  margin-top: 250px;
+  max-width: 100%;
+}
+
+.install-btns {
+  display: flex;
+  gap: 15px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.store-btn {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 14px;
+  box-shadow: 0px 30px 60px 0px #ffae004a;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  width: 202px;
+  height: 60px;
+}
+
+.store-btn img {
+  margin-right: 12px;
+}
+
+.store-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.small-text {
+  font-size: 15px;
+  color: #616161;
+}
+
+.big-text {
+  font-size: 18px;
+  color: #000;
+  font-weight: bold;
+}
+
+.install button {
+  width: 220px;
+  height: 60px;
+  border-radius: 5px;
+  border: none;
+  display: flex;
+  background-color: white;
+}
+
+@media only screen and (max-width: 1205px) {
+  .imenaipon {
+    display: none;
+  }
+
+  .ramehelper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .install {
+    margin-top: 100px;
+  }
+
+  .install-btns {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .install h1 {
+    font-size: 42px;
+  }
+
+  .install p {
+    font-size: 16px;
+  }
+
+  .store-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .install-btns {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 405px) {
+  .install {
+    width: 330px;
+    margin: 0px;
+  }
+  .ramehelper {
+    width: 330px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .information-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-bottom: 120px;
+  }
+
+  .information-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    gap: 150px;
+  }
+
+  .information-container div {
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .information-container div h2 {
+    border: none;
+  }
+
+  .information-container div h2 {
+    padding: 0px;
+    margin: 0px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .information-container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 250px;
+    height: 200px;
+  }
+
+  .information-container div h2 {
+    margin-top: 50px;
+  }
+
+  .information-container {
+    width: 330px;
+  }
+}
+
 @media only screen and (max-width: 1340px) {
   .foodtitle {
     margin-bottom: 50px;
