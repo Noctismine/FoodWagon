@@ -521,6 +521,7 @@ nav {
   margin-top: 130px;
   max-width: 1350px;
   width: 100%;
+
   background-color: white;
   border-radius: 46px;
   padding: 55px;
@@ -545,16 +546,34 @@ nav {
   padding-right: 45px;
 }
 
+.secondinfo {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
 .imenaipon {
   margin-top: 160px;
   height: 599px;
 }
 
 .ramehelper {
+  margin: 0 auto; /* center the content */
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  padding: 50px;
+  position: relative;
+  z-index: 2;
 }
 
 .install {
@@ -615,6 +634,45 @@ nav {
   background-color: white;
 }
 
+.deals {
+  height: 2000px;
+}
+
+.dealebi {
+  height: 1806px;
+
+  max-width: 1480px;
+  width: 100%;
+}
+
+.dealebi-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.deal-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+  gap: 100px;
+}
+
+.deal-card img {
+  width: 770px;
+  height: 400px;
+  border-radius: 0px 16px 16px 0px;
+}
+
+.deal-card {
+  height: 400px;
+  border-radius: 16px;
+  width: 1300px;
+  display: flex;
+  box-shadow: 0px 2px 42px 0px #7c7c7c47;
+}
+
 @media only screen and (max-width: 1205px) {
   .imenaipon {
     display: none;
@@ -628,6 +686,7 @@ nav {
 
   .install {
     margin-top: 100px;
+    margin-bottom: 120px;
   }
 
   .install-btns {
@@ -660,7 +719,6 @@ nav {
 @media only screen and (max-width: 405px) {
   .install {
     width: 330px;
-    margin: 0px;
   }
   .ramehelper {
     width: 330px;
