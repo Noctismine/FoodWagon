@@ -244,7 +244,7 @@ nav {
 
 @media (max-width: 500px) {
   .img2 {
-    display: none; /* Hide the image to keep layout clean on small screens */
+    display: none;
   }
 
   .imenavage {
@@ -551,14 +551,6 @@ nav {
   overflow: hidden;
   width: 100%;
 }
-.wave {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  z-index: 1;
-}
 
 .imenaipon {
   margin-top: 160px;
@@ -566,14 +558,17 @@ nav {
 }
 
 .ramehelper {
-  margin: 0 auto; /* center the content */
-  display: flex;
+  margin: 0 auto;
+
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  padding: 50px;
+
   position: relative;
   z-index: 2;
+}
+
+.ramewrapper {
+  display: flex;
 }
 
 .install {
@@ -635,7 +630,7 @@ nav {
 }
 
 .deals {
-  height: 2000px;
+  height: 1630px;
 }
 
 .dealebi {
@@ -671,6 +666,127 @@ nav {
   width: 1300px;
   display: flex;
   box-shadow: 0px 2px 42px 0px #7c7c7c47;
+}
+
+.banner {
+  position: relative;
+}
+
+.banner-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.banner-wrapper img {
+  width: 100%;
+  display: block;
+}
+
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.banner-content h1 {
+  font-size: 57px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.banner-content button {
+  border-radius: 8px;
+  padding: 21px 48px;
+  background-color: #f15e28;
+  font-size: 18px;
+  color: white;
+  border: none;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1300px) {
+  .banner-content h1 {
+    font-size: 36px;
+    padding: 0 20px;
+  }
+
+  .banner-content button {
+    padding: 16px 32px;
+    font-size: 16px;
+  }
+
+  .banner-content {
+    top: 55%;
+    transform: translate(-50%, -55%);
+  }
+}
+
+@media (max-width: 850px) {
+  .banner-content h1 {
+    font-size: 28px;
+  }
+
+  .banner-content button {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 680px) {
+  .banner-content h1 {
+    font-size: 22px;
+  }
+
+  .banner-wrapper img {
+    height: 200px;
+  }
+
+  .banner-content button {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 560px) {
+  .banner-content h1 {
+    font-size: 16px;
+  }
+
+  .banner-wrapper img {
+    height: 150px;
+  }
+
+  .banner-content button {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 430px) {
+  .banner-content h1 {
+    font-size: 20px;
+  }
+
+  .banner-content button {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 360px) {
+  .banner-content h1 {
+    font-size: 19px;
+  }
+
+  .banner-content button {
+    padding: 7px 14px;
+    font-size: 13px;
+  }
 }
 
 @media only screen and (max-width: 1205px) {
@@ -760,6 +876,11 @@ nav {
     padding: 0px;
     margin: 0px;
   }
+
+  .ramewrapper {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media only screen and (max-width: 650px) {
@@ -810,6 +931,117 @@ nav {
   .foodseqcia-wrapper {
     display: flex;
     justify-content: center;
+  }
+
+  .deal-card {
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+  }
+
+  .deal-card div {
+    width: 500px;
+  }
+
+  .deal-card img {
+    width: 500px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .deal-card {
+    display: flex;
+    justify-content: center;
+    width: 800px;
+  }
+
+  .deal-card div {
+    width: 400px;
+  }
+
+  .deal-card img {
+    width: 400px;
+  }
+
+  .deal-card button {
+    display: none;
+  }
+}
+
+@media (max-width: 715px) {
+  .deals {
+    height: 2300px;
+  }
+}
+
+@media (max-width: 840px) {
+  .deal-card {
+    display: flex;
+    justify-content: center;
+
+    width: 700px;
+  }
+
+  .deal-card div {
+    width: 350px;
+  }
+
+  .deal-card img {
+    width: 350px;
+  }
+
+  .deal-card button {
+    display: none;
+  }
+}
+
+@media (max-width: 715px) {
+  .deal-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: none !important;
+    border-radius: 0px !important;
+    gap: 150px;
+  }
+
+  .deal-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    border-radius: none !important;
+    border-radius: 0px !important;
+    box-sizing: border-box;
+    height: 600px;
+    border-radius: 0px;
+  }
+
+  .deal-card div {
+    width: 100%;
+    padding: 20px;
+    margin-top: 0;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: none !important;
+    border-radius: 0px !important;
+  }
+
+  .deal-card h1 {
+    font-size: 26px;
+  }
+
+  .deal-card p {
+    font-size: 16px;
+    color: #616161b0;
+  }
+
+  .deal-card > img {
+    width: 100%;
+    border-radius: none !important;
+    border-radius: 0px !important;
   }
 }
 
@@ -1052,4 +1284,124 @@ nav {
   .text p {
     text-align: center;
   }
+}
+
+footer {
+  background-color: #1e1e1e;
+  color: #ccc;
+  padding: 60px 40px 30px 40px;
+}
+
+.top-cities {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #333;
+}
+
+.top-cities h4 {
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.city-col ul {
+  list-style: none;
+  padding: 0;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.bottom-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 40px auto 20px auto;
+}
+
+.footer-col {
+  flex: 1 1 200px;
+  margin-bottom: 30px;
+}
+
+.footer-col h4 {
+  color: #fff;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.social-col {
+  max-width: 300px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.subscribe p {
+  font-size: 12px;
+  margin-bottom: 8px;
+  color: #ccc;
+  font-weight: bold;
+}
+
+.subscribe {
+  display: flex;
+  gap: 10px;
+}
+
+.subscribe input {
+  padding: 12px;
+
+  border: none;
+  border-radius: 4px;
+  flex: 1;
+  font-size: 15px;
+}
+
+.subscribe button {
+  background-color: orange;
+  border: none;
+  padding: 12px 20px;
+  color: white;
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(255, 165, 0, 0.5);
+}
+
+.footer-note {
+  text-align: center;
+  font-size: 12px;
+  color: #888;
+  padding-top: 20px;
+}
+
+.footer-note span {
+  font-weight: bold;
+  color: #fff;
+}
+
+.footer-note a {
+  color: orange;
+  text-decoration: none;
 }
